@@ -93,4 +93,8 @@ Look for:
 
 ## 📄 License
 
-MIT
+This project is licensed under the MIT License.
+
+© 2026 Usha Rengaraju
+
+See the [LICENSE](LICENSE) file for full details.
