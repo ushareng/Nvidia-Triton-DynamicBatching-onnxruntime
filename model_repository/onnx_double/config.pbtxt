@@ -1,0 +1,28 @@
+name: "onnx_double"
+platform: "onnxruntime_onnx"
+max_batch_size: 8
+
+input [
+  {
+    name: "INPUT"
+    data_type: TYPE_FP32
+    dims: [4]
+  }
+]
+
+output [
+  {
+    name: "OUTPUT"
+    data_type: TYPE_FP32
+    dims: [4]
+  }
+]
+
+dynamic_batching {
+  preferred_batch_size: [2, 4, 8]
+  max_queue_delay_microseconds: 2000
+}
+
+instance_group [
+  { kind: KIND_CPU, count: 1 }
+]
