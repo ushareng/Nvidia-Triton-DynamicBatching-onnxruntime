@@ -4,6 +4,8 @@ This repository demonstrates **dynamic batching** using **NVIDIA Triton Inferenc
 
 The demo uses a minimal **ONNX Runtime** model that doubles the input tensor values and shows how Triton batches multiple concurrent requests into fewer executions.
 
+<img width="1907" height="256" alt="image" src="https://github.com/user-attachments/assets/d332f42a-28e8-4755-a0db-91516f450292" />
+
 ---
 
 ## 🚀 What This Demo Shows
